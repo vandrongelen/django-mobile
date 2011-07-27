@@ -7,6 +7,10 @@ def flavour(request):
         'flavour': get_flavour(),
     }
 
+def user_agent_is_mobile(request):
+    return {
+        'user_agent_is_mobile': request.user_agent_is_mobile,
+    }
 
 def is_mobile(request):
     return {
